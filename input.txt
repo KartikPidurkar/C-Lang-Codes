@@ -1,0 +1,9 @@
+Machine learning is a subset of artificial intelligence that 
+enables computers to learn patterns from data and make predictions
+or decisions without explicit programming. It relies on algorithms
+trained on datasets, where supervised learning uses labeled examples
+for tasks like classification and regression, while unsupervised learning
+uncovers hidden structures in unlabeled data through clustering or 
+dimensionality reduction. This approach powers applications from image
+recognition to recommendation systems, fundamentally transforming industries
+by automating complex pattern recognition

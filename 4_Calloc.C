@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<stdlib.h>
+//Calloc() = Contiguous Allocation // Allocates memory dynamically and sets all allocated bytes to 0.
+//malloc() is faster but calloc() leads to less bugs //calloc(#,size)
+int main(){
+
+    int number = 0;
+    printf("Enter the number of players:");
+    scanf("%d",&number);
+
+    int *scores = (int*)calloc(number , sizeof(int));
+
+    if(scores==NULL){
+        printf("Memory allocation failed!");
+        return 1;
+    }
+
+    for(int i =0;i<number;i++){
+        printf("Enter score #%d:",i+1);
+        scanf("%d",&scores[i]);
+    }
+    for(int i=0;i<number;i++){
+        printf(" %d\n",scores[i]);
+    }
+    free(scores);
+    scores = NULL;
+
+    return 0;
+}
